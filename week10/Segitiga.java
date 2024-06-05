@@ -1,4 +1,4 @@
-package poly;
+package week10;
 
 public class Segitiga extends BangunDatar {
     private int alas;
