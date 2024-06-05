@@ -32,14 +32,14 @@ public class Main {
                 break;
 
             case 3:
-                System.out.print("Masukkan alas segitiga: ");
-                int alas = scanner.nextInt();
-                System.out.print("Masukkan tinggi segitiga: ");
-                int tinggi = scanner.nextInt();
-                Segitiga segitiga = new Segitiga(alas, tinggi);
-                segitiga.luas();
+                System.out.print("Masukkan sisi : ");
+                sisi = scanner.nextInt();
+                System.out.print("Masukkan sisi : ");
+                sisi = scanner.nextInt();
+                System.out.print("Masukkan sisi : ");
+                sisi = scanner.nextInt();
+                Segitiga segitiga = new Segitiga(sisi, sisi, sisi);
                 segitiga.keliling();
-                break;
 
             default:
                 System.out.println("Pilihan tidak valid.");
