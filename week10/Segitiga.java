@@ -1,25 +1,31 @@
 package week10;
 
-public class Segitiga extends BangunDatar {
+public class Segitiga
+{
     private int alas;
     private int tinggi;
-
-    public Segitiga(int alas, int tinggi) {
+    private int sisi;
+    
+    public Segitiga (int alas, int tinggi, int sisi)
+    {
         this.alas = alas;
         this.tinggi = tinggi;
+        this.sisi = sisi;
     }
 
-    @Override
-    public void luas() {
-        float luas = 0.5f * alas * tinggi;
-        System.out.println("Luas Segitiga: " + luas);
+    public void luas()
+    {
+        System.out.println("luas segitiga dengan alas "+alas+" dan tinggi "+tinggi+" adalah" +(alas*tinggi)/2);
+    }
+    
+    public  void keliling()
+    {
+        System.out.println("Keliling segitiganya adalah : " + (sisi + sisi + sisi));  
+
     }
 
-    @Override
-    public void keliling() {
-        // Menghitung panjang sisi miring segitiga siku-siku
-        double sisiMiring = Math.sqrt(alas * alas + tinggi * tinggi);
-        double keliling = alas + tinggi + sisiMiring;
-        System.out.println("Keliling Segitiga: " + keliling);
+    public int tinggi()
+    {
+        return tinggi;
     }
 }
